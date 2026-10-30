@@ -1,0 +1,2 @@
+Command: devhealth --events samples/diagnostic-events.json --json
+Exit code: 1

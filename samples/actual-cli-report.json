@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "details": {
+        "executable": "/opt/pyvenv/bin/python",
+        "implementation": "CPython",
+        "minimum_version": "3.10",
+        "version": "3.13.5"
+      },
+      "name": "python",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "free_bytes": 32011517952,
+        "free_percent": 94.79,
+        "path": "/mnt/data/devhealth-cli",
+        "total_bytes": 33770192896,
+        "used_bytes": 23912448
+      },
+      "name": "disk",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "CI": true,
+        "CONDA_PREFIX": false,
+        "PATH": true,
+        "PYTHONPATH": false,
+        "VIRTUAL_ENV": false
+      },
+      "name": "environment",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "missing": [
+          "code",
+          "docker"
+        ],
+        "tools": [
+          {
+            "available": false,
+            "name": "code",
+            "path": null
+          },
+          {
+            "available": false,
+            "name": "docker",
+            "path": null
+          },
+          {
+            "available": true,
+            "name": "git",
+            "path": "/usr/bin/git"
+          },
+          {
+            "available": true,
+            "name": "node",
+            "path": "/opt/nvm/versions/node/v22.16.0/bin/node"
+          },
+          {
+            "available": true,
+            "name": "npm",
+            "path": "/opt/nvm/versions/node/v22.16.0/bin/npm"
+          },
+          {
+            "available": true,
+            "name": "pytest",
+            "path": "/opt/pyvenv/bin/pytest"
+          }
+        ]
+      },
+      "name": "developer_tools",
+      "status": "warning"
+    },
+    {
+      "details": {
+        "error_events": 2,
+        "event_count": 5,
+        "latency_ms": {
+          "average": 620.75,
+          "count": 4,
+          "maximum": 1210.0
+        },
+        "levels": {
+          "ERROR": 2,
+          "INFO": 2,
+          "WARN": 1
+        },
+        "missing_latency_events": 1,
+        "services": {
+          "billing-api": 3,
+          "profile-api": 2
+        }
+      },
+      "name": "diagnostic_events",
+      "status": "ok"
+    }
+  ],
+  "exit_code": 1,
+  "overall_status": "warning",
+  "schema_version": "1.0",
+  "tool": {
+    "name": "devhealth",
+    "version": "1.0.0"
+  }
+}

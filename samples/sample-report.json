@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "details": {
+        "executable": "/usr/bin/python3",
+        "implementation": "CPython",
+        "minimum_version": "3.10",
+        "version": "3.12.0"
+      },
+      "name": "python",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "free_bytes": 60000000000,
+        "free_percent": 60.0,
+        "path": "/workspace",
+        "total_bytes": 100000000000,
+        "used_bytes": 40000000000
+      },
+      "name": "disk",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "CI": false,
+        "CONDA_PREFIX": false,
+        "PATH": true,
+        "PYTHONPATH": false,
+        "VIRTUAL_ENV": true
+      },
+      "name": "environment",
+      "status": "ok"
+    },
+    {
+      "details": {
+        "missing": [
+          "docker"
+        ],
+        "tools": [
+          {
+            "available": false,
+            "name": "docker",
+            "path": null
+          },
+          {
+            "available": true,
+            "name": "git",
+            "path": "/usr/bin/git"
+          },
+          {
+            "available": true,
+            "name": "node",
+            "path": "/usr/bin/node"
+          }
+        ]
+      },
+      "name": "developer_tools",
+      "status": "warning"
+    },
+    {
+      "details": {
+        "error_events": 2,
+        "event_count": 5,
+        "latency_ms": {
+          "average": 620.75,
+          "count": 4,
+          "maximum": 1210.0
+        },
+        "levels": {
+          "ERROR": 2,
+          "INFO": 2,
+          "WARN": 1
+        },
+        "missing_latency_events": 1,
+        "services": {
+          "billing-api": 3,
+          "profile-api": 2
+        }
+      },
+      "name": "diagnostic_events",
+      "status": "ok"
+    }
+  ],
+  "exit_code": 1,
+  "overall_status": "warning",
+  "schema_version": "1.0",
+  "tool": {
+    "name": "devhealth",
+    "version": "1.0.0"
+  }
+}
